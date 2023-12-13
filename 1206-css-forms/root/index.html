@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Global travelers</title>
+<!--        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" type="text/css">-->
+        <link href="css/reset.css" rel="stylesheet" type="text/css">
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+    </head>
+    
+    <body>
+<!--       main>section.booking>article.cta>header>h1{Book your flight today}+p>lorem-->
+        <main>
+            <section class="booking">
+                <article class="cta">
+                    <header>
+                        <h1>Book your flight today</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima porro sequi rerum adipisci nesciunt natus, quaerat molestias excepturi, consequuntur at, facere reprehenderit tenetur perferendis corporis fugit eius a ullam blanditiis!</p>
+                    </header>
+                </article>
+                
+                <article class="formSection">
+                    <form action="#" id="flightBook">
+<!-- ul.formGroup#tripType>li*3>label>input+span -->
+                        <ul class="formGroup" id="tripType">
+                            <li>
+                                <label for="roundTrip">
+                                    <input type="radio" id="roundTrip" name="flightType">
+                                    <span></span>Round trip
+                                </label>
+                            </li>
+                            <li>
+                                <label for="oneWay">
+                                   <input type="radio" id="oneWay" name="flightType">
+                                    <span></span>One way
+                                </label>
+                            </li>
+                            <li>
+                                <label for="multiCity">
+                                    <input type="radio" id="multiCity" name="flightType">
+                                    <span></span>Multi-city
+                                </label>
+                            </li>
+                        </ul>
+                        
+<!--  ul.formGroup#placeDate>li*4>label.formLabel+input.formControl-->
+                        <ul class="formGroup" id="placeDate">
+                            <li>
+                                <label for="flyingFrom" class="formLabel">From</label>
+                                <input type="text" class="formControl" id="flyingFrom" placeholder="City or airport">
+                            </li>
+                            <li>
+                                <label for="flyingTo" class="formLabel">To</label>
+                                <input type="text" class="formControl" id="flyingTo" placeholder="City or airport">
+                            </li>
+                            <li>
+                                <label for="departing" class="formLabel">Departing date</label>
+                                <input type="text" class="formControl" id="departing" placeholder="mm/dd/yyyy">
+                            </li>
+                            <li>
+                                <label for="returning" class="formLabel">Returning date</label>
+                                <input type="text" class="formControl" id="returning" placeholder="mm/dd/yyyy">
+                            </li>
+                        </ul>
+<!--    ul.formGroup#details>li*3>label.formLabel+select.formControl>option*4-->
+                        <ul class="formGroup" id="details">
+                            <li>
+                                <label for="numOfAdults" class="formLabel">Adults (18+)</label>
+                                <select name="numOfAdults" id="numOfAdults" class="formControl">
+                                    <option value="a1">1</option>
+                                    <option value="a2">2</option>
+                                    <option value="a3">3</option>
+                                    <option value="a4">4</option>
+                                </select>
+                                <i class="fa fa-arrow-down selectArrow"></i>
+                             </li>
+                            <li>
+                                <label for="numOfKids" class="formLabel">Children (0-17)</label>
+                                <select name="numOfKids" id="numOfKids" class="formControl">
+                                    <option value="c1">1</option>
+                                    <option value="c2">2</option>
+                                    <option value="c3">3</option>
+                                    <option value="c4">4</option>
+                                    <option value="c5">5</option>
+                                    <option value="c6">6</option>
+                                </select>
+                                <i class="fa fa-arrow-down selectArrow"></i>
+                             </li>
+                            <li>
+                                <label for="travClass" class="formLabel">Travel class</label>
+                                <select name="travClass" id="travClass" class="formControl">
+                                    <option value="economy">Economy class</option>
+                                    <option value="biz">Business class</option>
+                                    <option value="first">First class</option>
+                                </select>
+                                <i class="fa fa-arrow-down selectArrow"></i>
+                            </li>
+                        </ul>
+                        
+                        <button class="submitBtn">Show flights</button>
+                    </form>
+                </article>
+            </section>
+        </main>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
